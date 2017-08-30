@@ -1,0 +1,12 @@
+<title>{{ site.title }}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+<link rel="stylesheet" href="{{ site.baseurl }}/fa/css/font-awesome.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl }}/images/favicon.ico" >
+
+{% if page.custom_css %}
+{% for stylesheet in page.custom_css %}
+<link rel="stylesheet" href="{{ site.baseurl }}/css/{{ stylesheet }}.css" type="text/css">
+{% endfor %}
+{% endif %}

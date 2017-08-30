@@ -1,0 +1,6 @@
+
+_*
+!_layouts/
+!_includes/
+*.DS_Store
+*.Rhistory 
